@@ -1,0 +1,89 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+
+
+@mixin flexCenter($justify: center, $align: center, $direction: row){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+span{
+    font-size: 0.75rem;
+    color: #666666;
+}
+
+p{
+    color: #031633;
+}
+
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+//側邊導覽
+.sidebar{
+    @include flexCenter($direction: column);
+
+    @media (min-width: 1024px) {
+    
+    }
+
+    &__top{
+
+        &__worker{
+
+            &__img{
+                padding: 1rem;
+                img{
+                    object-fit: contain;
+                    border-radius: 100%;
+                }
+            }
+
+            &__info{
+                padding: 1rem;
+            }
+
+        }
+    }
+
+    &__bottom{
+
+        &__img{
+            padding: 1rem;
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+//頂部導覽
+
+
+//內容
