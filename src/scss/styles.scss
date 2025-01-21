@@ -28,6 +28,10 @@
     align-items: $align;
 }
 
+.h6{
+    font-size: 1rem;
+}
+
 span{
     font-size: 0.75rem;
     color: #666666;
@@ -53,6 +57,7 @@ body{
     }
 
     &__top{
+        padding: 1rem;
 
         &__worker{
 
@@ -64,10 +69,10 @@ body{
                 }
             }
 
-            &__info{
-                padding: 1rem;
-            }
+        }
 
+        &__projects{
+            @include flexCenter($direction: column);
         }
     }
 
@@ -87,3 +92,13 @@ body{
 
 
 //內容
+
+
+//卡片
+.card{
+
+    &__title{
+        @include flexCenter($justify: space-between);
+        margin: 0.5rem 0;
+    }
+}
